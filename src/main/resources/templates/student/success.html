@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Họ và tên:</h1>
+	<h1 th:text="${name}"></h1>
+	<hr />
+	<h1>Điểm trung bình:</h1>
+	<h1 th:text="${mark}"></h1>
+	<h1>Chuyên ngành:</h1>
+	<div th:switch="${major}">
+		<b th:case="WEB">Thiết kế web</b>
+		<b th:case="APP">Ứng dụng phần mềm</b>
+	</div>
+</body>
+</html>
